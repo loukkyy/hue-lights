@@ -1,0 +1,21 @@
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1rem;
+    /* border-radius: 5px;   */
+    background: linear-gradient(to right,  #ff3232 0%,#fff130 20%,#45ff30 35%,#28fff0 52%,#282cff 71%,#ff28fb 88%,#ff0094 100%);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; 
+    background: whitesmoke;
+    opacity: 0.5;
+    cursor: pointer;
+  }

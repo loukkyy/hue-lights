@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUE Lights</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- <h1 class="title"><i class="fas fa-home"></i> - Servan's HUE</h1> -->
+      <section class="glass">
+        <div class="dashboard">
+          <div class="light-group-button group-all active">All</div>
+        </div>
+        <div class="lights-container"></div>
+      </section>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </main>
+    <div id="overlay"></div>
+    <div id="bridge-pop-up">
+      <div class="info">
+        <img src="./images/hue_bridge.png" alt="HUE Bridge">
+        <p>Press the push-link button on the Bridge</p>
+      </div>
+      <button id="bridge-pop-up-close">OK</button>
+    </div>
+
+    <template id="light-button-template">
+      <button class="light-button">
+        <div class="light-button-icon">
+          <i class="far fa-lightbulb"></i>
+        </div>
+        <div class="light-button-info">
+          <p id="light-name"></p>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="1" max="360" step="5" class="slider" />
+        </div>
+      </button>
+    </template>
+  </body>
+</html>
