@@ -186,5 +186,5 @@ document.addEventListener("input", (e) => {
   const lightButton = e.target.closest(".light-button")
   const lightId = lightButton.dataset.lightId
   const hue = convertHue(e.target.value)
-  setLightState(lightId, { hue: hue })
+  setLightState(HOST, username, lightId, { hue: hue })
 })
